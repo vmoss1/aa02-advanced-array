@@ -13,9 +13,16 @@ console.log(avgVal([])); // null
 
 */
 
-let avgVal = function(arr) {
-    // Your code here 
+let avgVal = function (arr) {
+  let sum = 0;
+  arr.forEach((word) => {
+    sum += word;
+  });
+  return sum / arr.length;
 };
+
+console.log(avgVal([5, 10])); // 7.5
+// console.log(avgVal([])); // null
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

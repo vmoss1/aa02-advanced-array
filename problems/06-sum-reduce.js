@@ -12,9 +12,12 @@ console.log(sumWithReduce([])); // 0
 
 */
 
-let sumWithReduce = function(nums) {
-  // Your code here 
+let sumWithReduce = function (nums) {
+  const initialSum = 0;
+  return nums.reduce((accumulator, num) => accumulator + num, initialSum);
 };
+
+console.log(sumWithReduce([10, 3, 5, 2])); // 20
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

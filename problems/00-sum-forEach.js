@@ -13,8 +13,8 @@ console.log(sumForEach([])); // 0
 
 let sumForEach = function (arr) {
   let sum = 0;
-  arr.forEach((element) => {
-    sum += element;
+  arr.forEach((word) => {
+    sum += word;
   });
   return sum;
 };

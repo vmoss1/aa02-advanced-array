@@ -15,16 +15,22 @@ console.log(longestWord('')); // ''
 
 */
 
-let longestWord = function(sentence) {
-    // Your code here 
+let longestWord = function (sentence) {
+  let longestNumber = 0;
+  return [...sentence].filter((word) => { word.forEach
+
+  });
 };
 
-// Your code here 
+console.log(longestWord("where did everyone go")); // 'everyone'
+console.log(longestWord("prefer simplicity over complexity")); // 'simplicity'
+console.log(longestWord("")); // ''
+// Your code here
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
-    module.exports = longestWord;
+  module.exports = longestWord;
 } catch (e) {
-    module.exports = null;
+  module.exports = null;
 }

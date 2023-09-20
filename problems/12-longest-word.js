@@ -16,16 +16,7 @@ console.log(longestWord('')); // ''
 */
 
 let longestWord = function (sentence) {
-  let str = sentence.split(" ");
-  let longestWord = 0;
-  let word = null;
-  str.forEach(function (str) {
-    if (longestWord < str.length) {
-      longestWord = str.length;
-      word = str;
-    }
-  });
-  return word;
+
 };
 
 console.log(longestWord("where did everyone go")); // 'everyone'

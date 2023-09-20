@@ -15,21 +15,17 @@ console.log(snakeToCamel('APp_ACADEMY_iS_cOol')); // 'AppAcademyIsCool'
 
 */
 
+const longestWord = require("./12-longest-word");
+
 function snakeToCamel(str) {
-  const words = str.split(" ");
-  let newString= ''
-  return words.map((word) => {
-       
-  });
+
 }
 
-//   let array = str.split("");
-//   return array.map((word) => {
 
-//   });
 
-//console.log(snakeToCamel("snakes_go_hiss")); // 'SnakesGoHiss'
-//console.log(snakeToCamel("say_hello_world")); // 'SayHelloWorld'
+
+console.log(snakeToCamel("snakes_go_hiss")); // 'SnakesGoHiss'
+console.log(snakeToCamel("say_hello_world")); // 'SayHelloWorld'
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

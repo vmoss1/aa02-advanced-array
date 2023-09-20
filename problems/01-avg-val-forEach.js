@@ -14,11 +14,11 @@ console.log(avgVal([])); // null
 */
 
 let avgVal = function (arr) {
-  let sum = 0;
-  arr.forEach((word) => {
-    sum += word;
-  });
-  return sum / arr.length;
+  let avg = 0;
+  arr.forEach((num)=>{
+   avg += num / arr.length
+  })
+  return avg;
 };
 
 console.log(avgVal([5, 10])); // 7.5

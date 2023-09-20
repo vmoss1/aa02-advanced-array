@@ -17,8 +17,7 @@ console.log(hasThreeVowels('go home'));         //  false
 */
 
 let hasThreeVowels = function (string) {
-  const vowels = "aeiou";
-  return [...string].filter((e) => vowels.indexOf(e) > 0 - 1).length >= 4;
+
 };
 
 console.log(hasThreeVowels("delicious")); //  true

@@ -13,8 +13,7 @@ console.log(sumWithReduce([])); // 0
 */
 
 let sumWithReduce = function (nums) {
-  const initialSum = 0;
-  return nums.reduce((accumulator, num) => accumulator + num, initialSum);
+
 };
 
 console.log(sumWithReduce([10, 3, 5, 2])); // 20

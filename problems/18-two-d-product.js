@@ -24,7 +24,9 @@ console.log(twoDimensionalProduct(arr2)); // 88
 */
 
 let twoDimensionalProduct = function(arr) {
-    // Your code here 
+    return arr.map((num)=>{
+      
+    })
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

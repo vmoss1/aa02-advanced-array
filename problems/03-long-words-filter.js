@@ -13,17 +13,17 @@ console.log(longWords(['couscous', 'soup', 'ceviche', 'solyanka' ,'taco'])); // 
 
 */
 
+//? Input: array of words
+//? Output: array of words that are longer 5 characters
+
 let longWords = function (words) {
-  let newArr = [];
-  return words.filter((word)=>{
-    if(word.length > 5)
-    return newArr.push(word)
-  })
+  return words.filter((word) => {
+    if (word.length > 5) return word;
+  });
 };
 
-
 console.log(longWords(["bike", "skateboard", "scooter", "moped"])); // [ 'skateboard', 'scooter' ]
-console.log(longWords(['couscous', 'soup', 'ceviche', 'solyanka' ,'taco'])); // [ 'couscous', 'ceviche', 'solyanka' ]
+console.log(longWords(["couscous", "soup", "ceviche", "solyanka", "taco"])); // [ 'couscous', 'ceviche', 'solyanka' ]
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

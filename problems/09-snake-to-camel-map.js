@@ -15,14 +15,13 @@ console.log(snakeToCamel('APp_ACADEMY_iS_cOol')); // 'AppAcademyIsCool'
 
 */
 
-const longestWord = require("./12-longest-word");
-
 function snakeToCamel(str) {
-
+  const words = str.split("_");
+  const cameled = words.map((word) => {
+    return word[0].toUpperCase() + word.slice(1);
+  });
+  return cameled.join("");
 }
-
-
-
 
 console.log(snakeToCamel("snakes_go_hiss")); // 'SnakesGoHiss'
 console.log(snakeToCamel("say_hello_world")); // 'SayHelloWorld'

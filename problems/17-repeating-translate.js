@@ -29,12 +29,12 @@ console.log(repeatingTranslate("her family flew to France"));   // "herer family
 */
 
 let repeatingTranslate = function(sentence) {
-    // Your code here 
+    // Your code here
 };
 
 
 let translateWord = function(word) {
-    // Your code here 
+    // Your code here
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

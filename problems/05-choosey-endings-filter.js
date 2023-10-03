@@ -24,9 +24,14 @@ console.log(chooseyEndings(['simplicity', 'computer', 'felicity'], 'ily'));
 console.log(chooseyEndings(17, 'ily'));
 // [ ]
 */
+//? Use array.filter
 
 let chooseyEndings = function (words, suffix) {
-
+  return words.filter((word) => {
+    if (word.endsWith(suffix)) {
+      return word;
+    }
+  });
 };
 
 console.log(
@@ -36,6 +41,8 @@ console.log(
   )
 ); //[ 'hound', 'bond' ]
 console.log(chooseyEndings(["simplicity", "computer", "felicity"], "ily")); // []
+console.log(chooseyEndings(["simplicity", "computer", "felicity"], "icity"));
+// console.log(chooseyEndings(17, "ily"));
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

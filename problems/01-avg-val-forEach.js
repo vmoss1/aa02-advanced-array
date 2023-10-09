@@ -12,6 +12,11 @@ console.log(avgVal([3, 7, 2, 1, 2])); // 3
 console.log(avgVal([])); // null
 
 */
+// input: array of numbers
+// Output: integar of the avg of the numbers in the array
+// create a variable for avg = 0
+// use forEach on the arr
+// avg += sum to get avg divide total by length of the arr
 
 let avgVal = function (arr) {
   if (arr.length === 0) {
@@ -25,7 +30,6 @@ let avgVal = function (arr) {
 };
 
 console.log(avgVal([5, 10])); // 7.5
-// console.log(avgVal([])); // null
 console.log(avgVal([3, 7, 2, 1, 2])); // 3
 console.log(avgVal([])); // null
 

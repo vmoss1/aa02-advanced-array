@@ -14,30 +14,23 @@ console.log(hipsterfy('panthers are great animals')); // 'panthrs ar gret animls
 */
 
 let removeLastVowel = function (word) {
-  let newArr = [];
   let vowels = "aeiou";
-  for (let letter of word) {
-    if (!vowels.includes(letter)) {
-      newArr.push(letter);
+
+  for (let i = word.length - 1; i >= 0; i--) {
+    let letter = word[i];
+    if (vowels.includes(letter)) {
+      return word.slice(0, i) + word.slice(i + 1);
     }
   }
-  return newArr.join("");
 };
-
-console.log(removeLastVowel("helo you theree"));
-
+// console.log(removeLastVowel("henrey"));
 let hipsterfy = function (sentence) {
-  // Your code here
+  return sentence.split(" ").map(removeLastVowel).join(" ");
 };
 
-// alternative solution using Array.map
-// let hipsterfy = function(sentence) {
-//     return sentence.split(' ').map(removeLastVowel).join(' ');
-// };
-
-// console.log(hipsterfy("When should everyone wake up?")); // 'Whn shold everyon wak p?'
-// console.log(hipsterfy("get ready for our bootcamp")); // 'gt redy fr or bootcmp'
-// console.log(hipsterfy("panthers are great animals")); // 'panthrs ar gret animls'
+console.log(hipsterfy("When should everyone wake up?")); // 'Whn shold everyon wak p?'
+console.log(hipsterfy("get ready for our bootcamp")); // 'gt redy fr or bootcmp'
+console.log(hipsterfy("panthers are great animals")); // 'panthrs ar gret animls'
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

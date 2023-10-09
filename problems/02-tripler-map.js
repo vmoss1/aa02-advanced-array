@@ -10,6 +10,9 @@ Examples:
 console.log(tripler([2, 7, 4])); // [ 6, 21, 12 ]
 console.log(tripler([-5, 10, 0, 11])); // [ -15, 30, 0, 33 ]
 */
+// input: array of numbers
+// output: new arr with each num * 3
+// Map will edit the org arr, use num * 3 and return
 
 let tripler = function (nums) {
   return nums.map((num) => {

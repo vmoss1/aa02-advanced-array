@@ -19,13 +19,14 @@ console.log(hasThreeVowels('go home'));         //  false
 let hasThreeVowels = function (string) {
   let vowels = "aeiou";
   let vowelCounter = 0;
-  for (let word of string) {
-    if (vowels.includes(word)) {
+
+  for (let letter of string) {
+    if (vowels.includes(letter)) {
       vowelCounter += 1;
     }
-    if (vowelCounter > 3) {
-      return true;
-    }
+  }
+  if (vowelCounter > 3) {
+    return true;
   }
   return false;
 };

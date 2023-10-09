@@ -1,9 +1,6 @@
 function getProduct(nums) {
   let product = 1;
-  for (let num of nums) {
-    product *= num;
-  }
-  return product;
+  return nums.reduce((acc, val) => acc * val);
 }
 
 function highestProduct(numsList) {

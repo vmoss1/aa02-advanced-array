@@ -15,10 +15,7 @@ console.log(maxWithReduce([-2, -3, -7, 3])); // 3
 */
 
 let maxWithReduce = function (nums) {
-   let max = nums.reduce((acc , num )=> {
-     return acc > num ? acc : num;
-   })
-   return max;
+  return nums.reduce((acc, val) => (acc > val ? acc : val)); //using ternary as my conditinal syntax
 };
 
 console.log(maxWithReduce([-2, -3, -7, 3])); // 3

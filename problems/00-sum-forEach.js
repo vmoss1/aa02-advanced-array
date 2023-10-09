@@ -12,6 +12,8 @@ console.log(sumForEach([])); // 0
 */
 //? Input: array filled with numbers;
 //? Output: total sum of all values in the array an integer
+// create a sum variable starting at 0\
+// use .forEach on the array
 
 let sumForEach = function (arr) {
   let sum = 0;

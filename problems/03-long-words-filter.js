@@ -15,10 +15,14 @@ console.log(longWords(['couscous', 'soup', 'ceviche', 'solyanka' ,'taco'])); // 
 
 //? Input: array of words
 //? Output: array of words that are longer 5 characters
+// filter returns an array no need to create an empty one and it will iterate through the word
+// return word once filtered out
 
 let longWords = function (words) {
   return words.filter((word) => {
-    if (word.length > 5) return word;
+    if (word.length > 5) {
+      return word;
+    }
   });
 };
 

@@ -10,17 +10,19 @@ Examples:
 console.log(removeEWords('What time is it everyone?')); // 'What is it'
 console.log(removeEWords('Enter the building')); // 'building'
 
-*/
+*/ //input: string
+// output: new str with words that dont have an e
 
 let removeEWords = function (sentence) {
   let words = sentence.split(" ");
-  return words
-    .filter((letter) => {
-      if (!letter.includes("e")) {
-        return words;
-      }
-    })
-    .join(" ");
+
+  let noE = words.filter((word) => {
+    // put filter in a variable so that it can be joined
+    if (!word.includes("e")) {
+      return word;
+    }
+  });
+  return noE.join(" ");
 };
 
 console.log(removeEWords("Enter the building")); // 'building'
